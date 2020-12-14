@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <title>Halaman Utama</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navul">
+            <li>
+                <i class="fa fa-bars" onclick="openNav()"></i>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <h2>Enrolled</h2>
+                    <hr>
+                    <ul>
+                        <li>
+                            <img src="02m.jpg">
+                        </li>
+                        <li>Title Classroom</li>
+                    </ul>
+                </div>
+            </li>
+            <li>Classroom</li>
+        </ul>
+        <ul class="navul">
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <div class="create">
+                        <i class="fas fa-plus" data-toggle="tooltip" title="Create a class or join"></i>
+                    </div>
+                    
+                </a>
+            </li>
+            <li><img src="02m.jpg"></li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="cover bg-primary">
+            <div class="title-cr">Title Classroom</div>
+            <div class="owner-cr">John Marshall</div>
+        </div>
+        <img src="02m.jpg">
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+
+        
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            var open = document.getElementById("mySidenav");
+            open.style.width = "300px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
